@@ -1,0 +1,36 @@
+.button {
+  flex: 0 1 180px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 15px;
+  &:nth-of-type(odd) {
+    margin-right: 5px;
+  }
+  &:nth-of-type(even) {
+    margin-left: 5px;
+  }
+
+  &--blue {
+    background-color: #003574;
+    border: 1px solid #003574;
+    color: #fff;
+    border-radius: 4px 0px;
+    &:hover,
+    &:focus {
+      background-color: #001e4b;
+      border-color: #001e4b;
+      outline: none;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    &:hover,
+    &:focus {
+      background-color: #f2f2f2;
+      outline: none;
+    }
+  }
+}
